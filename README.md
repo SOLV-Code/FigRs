@@ -4,7 +4,7 @@
 
 The step of bringing quantitative information into a large group is tricky, 
 and small changes in layout can make a big difference. FigRs collects 
-the code for custom graphs and illustrates 
+code for custom graphs and illustrates 
 lessons learned from using R-based graphs in collaborative planning processes.
 
 Pulling together the material for this site also serves as a gentle nudge 
@@ -17,7 +17,7 @@ FigRs covers 3 types of examples:
 - [*Shiny Apps*](): interactive tools
 - [*3D Prints*](): turning data into tangible objects
 
-FigRs is also building a reference materials on the [wiki page](https://github.com/SOLV-Code/FigRs/wiki)
+FigRs is also building an inventory of reference materials on the [wiki page](https://github.com/SOLV-Code/FigRs/wiki).
 
 For feedback, requests, or corrections, start a discussion thread on the [issues page](https://github.com/SOLV-Code/FigRs/issues).
 
