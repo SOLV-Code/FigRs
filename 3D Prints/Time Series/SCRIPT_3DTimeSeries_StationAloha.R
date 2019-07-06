@@ -60,33 +60,29 @@ plot(aloha.df.annualavg$year, aloha.df.annualavg$temp,type="l")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # change to difference from lowest value (plus a base of 5%) and 
+# scale relative to base/pedestal units and grid cells/ year
+# some trial and error required for this
+aloha.pH.conv <- (aloha.df.annualavg$pHcalc_insitu * 1000 - min(950* aloha.df.annualavg$pHcalc_insitu) ) -400
+aloha.temp.conv <- (aloha.df.annualavg$temp *100 - min(95* aloha.df.annualavg$temp) ) - 120
 
-MLO_AnnMeanC02_conv <- MLO_AnnMeanC02 - min(0.95* MLO_AnnMeanC02) 
-
-#rescale to a max height of some specified units relative to the 4 grid cells/year
-MLO_AnnMeanC02_conv <- MLO_AnnMeanC02_conv/max(MLO_AnnMeanC02_conv)*80  
+plot(aloha.df.annualavg$year,aloha.pH.conv,type="l")
+plot(aloha.df.annualavg$year,aloha.temp.conv,type="l")
 
 # convert time series to surface coordinates
-MLO_persp <- ts2persp(MLO_AnnMeanC02_conv)
+pH_persp <- ts2persp(aloha.pH.conv )
+temp_persp <- ts2persp(aloha.temp.conv )
 
 # plot surface
-persp(x=1:dim(MLO_persp)[1],y=1:dim(MLO_persp)[2],z=MLO_persp,theta=45,phi=35, zlim=c(0,max(MLO_persp)), scale=FALSE)
+persp(x=1:dim(pH_persp)[1],y=1:dim(pH_persp)[2],z=pH_persp,
+      theta=45,phi=35, zlim=c(min(pH_persp),max(pH_persp)), scale=FALSE)
+
+persp(x=1:dim(temp_persp)[1],y=1:dim(temp_persp)[2],z=temp_persp,
+      theta=45,phi=35, zlim=c(min(temp_persp),max(temp_persp)), scale=FALSE)
 
 # scale to determine size of eventual object (2 = half of default size)  
 scalar <- 2
 
 # create stl file
-r2stl.mod(x=c(1:dim(MLO_persp)[1])/scalar,y=c(1:dim(MLO_persp)[2])/scalar,z=MLO_persp/scalar,filename="MaunaLoa_CO2.stl",show.persp=TRUE,z.expand=TRUE)
+r2stl.mod(x=c(1:dim(pH_persp)[1])/scalar,y=c(1:dim(pH_persp)[2])/scalar,z=pH_persp/scalar,filename="StationALOHA_pH.stl",show.persp=TRUE,z.expand=TRUE)
+r2stl.mod(x=c(1:dim(temp_persp)[1])/scalar,y=c(1:dim(temp_persp)[2])/scalar,z=temp_persp/scalar,filename="StationALOHA_temp.stl",show.persp=TRUE,z.expand=TRUE)
