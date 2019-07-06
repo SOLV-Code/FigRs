@@ -9,21 +9,11 @@ the increasing accessibility of 3D printing this is actually becoming feasible o
 The basic steps are:
 * Use R to create a surface plot 
 * Convert the plot into a shapefile (*.stl) using [r2stl{}](https://cran.r-project.org/web/packages/r2stl/index.html) by [Ian Walker](http://drianwalker.com/)
-* (Optional) Import the shapefile into [Blender](https://www.blender.org/)to polish up the design 
+* (Optional) Import the shapefile into [Blender](https://www.blender.org/) to polish up the design 
 (e.g. add text and hollow out the base to reduce the cost of the 3D print). 
 * Send your object to a 3D  printing service (e.g. [Shapeways](https://www.shapeways.com/))
 
 
-Solution: Set up a grid of square cells, and specify 
-heights to describe spikes based on the data series, 
-plus a base so that the final printed object can stand up. 
-Feed the resulting surface coordinates into a slightly 
-modified version of the r2stl.r function by Ian Walker. 
-This creates a basic *.stl shapefile 
-that can be directly used by 3D printers, 
-or imported into Blender 
-
-Use the custom function below to create your own, write to FigRs(at)solv.ca and suggest a time series, or get one of the examples from our online store.
 
 ###  Examples
 
@@ -35,11 +25,12 @@ Use the custom function below to create your own, write to FigRs(at)solv.ca and 
    * [Lynx Cycles - Mackenzie Region 1821 to 1934]()
    * [Fraser Sockeye Salmon Cycles]()  
 
+All of these are available via our [online shop](https://www.shapeways.com/shops/solv).
+To provide design suggestions or request a particular time series, leave a note on the
+[issues page](https://github.com/SOLV-Code/FigRs/issues).
 
 #### Pending
 * Surface Plot
-
-
 
 
 ### Data Prints by Others
