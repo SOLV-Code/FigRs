@@ -1,10 +1,10 @@
 ## 3D Print Design 1: Time Series on a Base
 
 
-Challenge: Convert a univariate time series into a surface,
+The challenge here is how to convert a univariate time series into a surface,
 plus a base so that the final printed object can stand up. 
 
-Solution: Set up a grid of square cells, and specify 
+To build the object, we set up a grid of square cells, and specify 
 heights for points on the surface based on the data series.
 
 Use the custom functions below to create your own, 

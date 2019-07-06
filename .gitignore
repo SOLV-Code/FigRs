@@ -11,6 +11,7 @@
 *.stl
 
 /3D Prints/Time Series/stl
+/3D Prints/Time Series/sources
 !images/BlenderScreenshot.jpg
 !images/FigRs_3dprint1.jpg
 !images/PerspScreenshot.jpg
