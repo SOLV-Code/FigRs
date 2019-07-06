@@ -3,6 +3,8 @@
 # Created by Gottfried Pestal (Solv Consulting Ltd.)
 ##############################################################################
 
+##### MAUNA LOA EXAMPLE ######
+
 # download the custom functions and put the .R files into your working directory
 
 # read in ts2persp() function
