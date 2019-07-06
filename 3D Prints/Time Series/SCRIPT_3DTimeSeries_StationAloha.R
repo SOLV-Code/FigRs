@@ -1,9 +1,12 @@
 #############################################################################
 # SCRIPT TO READ IN THE ts2persp() CUSTOM FUNCTION AND ILLUSTRATE ITS USE
 # Created by Gottfried Pestal (Solv Consulting Ltd.)
-##############################################################################
+##############################################################################\
 
 ##### STATION ALOHA EXAMPLE ######
+
+library(tidyverse)
+
 
 # download the custom functions and put the .R files into your working directory
 
@@ -15,28 +18,59 @@ source("FUNCTION_r2stlMOD.R")
 
 # DATA SOURCE
 # HOT-DOGS (Hawaii Ocean Time-series Data Organization & Graphical System)
-# Bottle Extraction page at http://hahana.soest.hawaii.edu/hot/hot-dogs/bextraction.html
-# Settings: 0-20m
-# Variables: Bottle pH, Bottle Salinit, CTD Salinity, CTD Temp
-# Note: Seemed to have a bug with the pH extraction. Had to extract pH separately, else would get a column of -9.
-# Copied the extracted data into a text file. 
+# http://hahana.soest.hawaii.edu/hot/products/HOT_surface_CO2.txt
+# Citation: 
+# Dore, J.E., R. Lukas, D.W. Sadler, M.J. Church, and D.M. Karl.  2009.  
+# Physical and biogeochemical modulation of ocean acidification in the central North Pacific.  
+# Proc Natl Acad Sci USA 106:12235-12240."
+# Also see plot at https://www.eea.europa.eu/data-and-maps/daviz/decline-in-ph-measured-at-2#tab-chart_1_filters=%7B%22rowFilters%22%3A%7B%7D%3B%22columnFilters%22%3A%7B%22columnfilter_Filter%22%3A%5B%22pHcalc_insitu%22%3B%22pHmeas_insitu%22%5D%7D%7D
 
 
-# read in the txt files
+aloha.df <- read.table("http://hahana.soest.hawaii.edu/hot/products/HOT_surface_CO2.txt",
+                      skip = 8, header=TRUE, fill=TRUE, na.strings = "-999" )
+
+# check the data
+head(aloha.df)
+
+#check the variable names
+names(aloha.df)
+
+# fix the date variable and add year, month colums
+aloha.df$date <- lubridate::dmy(aloha.df$date) # fix the date formatting
+
+aloha.df <- aloha.df %>% dplyr::mutate(year = lubridate::year(date),
+                                       month = lubridate::month(date))
 
 
-####################
-# rest not yet updated
 
-# scrape the Annual Mean CO2 estimates at Mauna Loa Observatory (MLO) from the NOAA website
-MLO_CO2 <- read.table("ftp://ftp.cmdl.noaa.gov/ccg/co2/trends/co2_annmean_mlo.txt")
-
+# do some basic plots first
+plot(aloha.df$date , aloha.df$pHcalc_insitu,type="l")
+plot(aloha.df$date , aloha.df$temp,type="l")
 
 
-MLO_CO2 # check
+# look at annual averages
+# NOTE: 1988 is incomplete (records start in Oct), so drop from the avg
+aloha.df.annualavg <- aloha.df %>% dplyr::select(year, pHcalc_insitu,temp) %>% 
+  dplyr::group_by(year) %>%
+  dplyr::summarise_all(funs(mean),na.rm=TRUE) %>%
+  dplyr::filter(year>1988)
 
-MLO_AnnMeanC02 <- MLO_CO2[,2]
-MLO_AnnMeanC02 # check
+plot(aloha.df.annualavg$year, aloha.df.annualavg$pHcalc_insitu,type="l")
+plot(aloha.df.annualavg$year, aloha.df.annualavg$temp,type="l")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # change to difference from lowest value (plus a base of 5%) and 
 
