@@ -11,7 +11,9 @@
 *.stl
 
 /3D Prints/Time Series/stl
-
+!images/BlenderScreenshot.jpg
+!images/FigRs_3dprint1.jpg
+!images/PerspScreenshot.jpg
 
 # Session Data & History files
 .RData
