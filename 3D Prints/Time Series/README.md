@@ -25,14 +25,26 @@ or get one of the sample prints from our [online shop](https://www.shapeways.com
 
 ### Worked Examples
 
+Data sources are listed in each R script.
+
+* [Mauna Loa Atmospheric CO2](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_MaunaLoaCO2.R)   
+* [El Nino Events (Nino4 Series)]()   
+* [Station ALOHA pH and Temperature]()   
+* [Lynx Cycles - Mackenzie Region 1821 to 1934](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_LynxAbd.R)
+* [Fraser Sockeye Salmon Cycles]()  
+
+
+### Planned Examples
+
+* Yukon River Ice Breakup at Dawson ([Data](http://www.yukonriverbreakup.com/statistics))
 
 
 
-   * [Mauna Loa Atmospheric CO2](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_MaunaLoaCO2.R)   
-   * [El Nino Events (Nino4 Series)]()   
-   * [Station ALOHA pH and Temperature]()   
-   * [Lynx Cycles - Mackenzie Region 1821 to 1934](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_LynxAbd.R)
-   * [Fraser Sockeye Salmon Cycles]()  
+
+
+
+
+
 
 
 
