@@ -16,6 +16,14 @@ The basic steps are:
 * Send your object to a 3D  printing service (e.g. [Shapeways](https://www.shapeways.com/)).
 
 
+<p float="left">
+
+<img src="https://github.com/brookemdavis/Salmon_MSE_Figure_Gallery/blob/master/Salmon%20MSE/PercentRanks/PercRank_FinalPlots.png" width="250" height="250">]
+
+<img src="https://github.com/brookemdavis/Salmon_MSE_Figure_Gallery/blob/master/Salmon%20MSE/PercentRanks/PercRank_ProgressionInSparklines.png" width="250" height="250">
+
+</p>
+
 
 ###  Examples
 
