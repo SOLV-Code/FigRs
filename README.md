@@ -13,9 +13,9 @@ clean up the code, and compile an inventory of tricks that we've used.
 
 FigRs covers 3 types of examples:
 
-- [*Plots*](): standard plots for presentations, handouts, and reports
-- [*Shiny Apps*](): interactive tools
-- [*3D Prints*](): turning data into tangible objects
+- [*Plots*](https://github.com/SOLV-Code/FigRs/tree/master/Shiny%20Apps): standard plots for presentations, handouts, and reports
+- [*Shiny Apps*](https://github.com/SOLV-Code/FigRs/tree/master/Plots): interactive tools
+- [*3D Prints*](https://github.com/SOLV-Code/FigRs/tree/master/3D%20Prints): turning data into tangible objects
 
 FigRs is also building an inventory of reference materials on the [wiki page](https://github.com/SOLV-Code/FigRs/wiki).
 

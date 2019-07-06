@@ -7,12 +7,11 @@ the increasing accessibility of 3D printing this is actually becoming feasible o
 *And you can use R to do most of the work for you!*.
 
 The basic steps are:
-
-
-
-
-Convert a data series into a surface which 
-can then be further processed into a 3D object for printing.
+* Use R to create a surface plot 
+* Convert the plot into a shapefile (*.stl) using [r2stl{}](https://cran.r-project.org/web/packages/r2stl/index.html) by [Ian Walker](http://drianwalker.com/)
+* (Optional) Import the shapefile into [Blender](https://www.blender.org/)to polish up the design 
+(e.g. add text and hollow out the base to reduce the cost of the 3D print). 
+* Send your object to a 3D  printing service (e.g. [Shapeways](https://www.shapeways.com/))
 
 
 Solution: Set up a grid of square cells, and specify 
@@ -22,8 +21,7 @@ Feed the resulting surface coordinates into a slightly
 modified version of the r2stl.r function by Ian Walker. 
 This creates a basic *.stl shapefile 
 that can be directly used by 3D printers, 
-or imported into Blender to polish up the design 
-(e.g. add text and hollow out the base to reduce the cost of the 3D print). 
+or imported into Blender 
 
 Use the custom function below to create your own, write to FigRs(at)solv.ca and suggest a time series, or get one of the examples from our online store.
 
@@ -31,10 +29,16 @@ Use the custom function below to create your own, write to FigRs(at)solv.ca and 
 
 #### Completed
 * [Time Series on a Base](https://github.com/SOLV-Code/FigRs/tree/master/3d%20Prints/Time%20Series)
+   * [Mauna Loa Atmospheric CO2]()   
+   * [El Nino Events (Nino4 Series)]()   
+   * [Station ALOHA pH and Temperature]()   
+   * [Lynx Cycles - Mackenzie Region 1821 to 1934]()
+   * [Fraser Sockeye Salmon Cycles]()  
+
 
 #### Pending
 * Surface Plot
-*
+
 
 
 
