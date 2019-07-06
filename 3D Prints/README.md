@@ -18,9 +18,9 @@ The basic steps are:
 
 <p float="left">
 
-<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/PerspScreenshot.jpg" width="250" height="250">
-<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/BlenderScreenshot.jpg" width="250" height="250">
-<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/FigRs_3dprint1.jpg" width="250" height="250">
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/PerspScreenshot.jpg" width="100" height="100">
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/BlenderScreenshot.jpg" width="100" height="100">
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/FigRs_3dprint1.jpg" width="100" height="100">
 
 
 </p>
