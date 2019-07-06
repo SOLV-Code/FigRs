@@ -18,9 +18,10 @@ The basic steps are:
 
 <p float="left">
 
-<img src="https://github.com/brookemdavis/Salmon_MSE_Figure_Gallery/blob/master/Salmon%20MSE/PercentRanks/PercRank_FinalPlots.png" width="250" height="250">]
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/PerspScreenshot.jpg" width="250" height="250">
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/BlenderScreenshot.jpg" width="250" height="250">
+<img src="https://github.com/SOLV-Code/FigRs/blob/master/images/FigRs_3dprint1.jpg" width="250" height="250">
 
-<img src="https://github.com/brookemdavis/Salmon_MSE_Figure_Gallery/blob/master/Salmon%20MSE/PercentRanks/PercRank_ProgressionInSparklines.png" width="250" height="250">
 
 </p>
 
