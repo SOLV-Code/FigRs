@@ -7,10 +7,6 @@ and small changes in layout can make a big difference. FigRs collects
 code for custom graphs and illustrates 
 lessons learned from using R-based graphs in collaborative planning processes.
 
-Pulling together the material for this site also serves as a gentle nudge 
-to polish up graphs that were frequently thrown together in the middle of a workshop, 
-clean up the code, and compile an inventory of tricks that we've used.
-
 FigRs covers 3 types of examples:
 
 - [*Plots*](https://github.com/SOLV-Code/FigRs/tree/master/Shiny%20Apps): standard plots for presentations, handouts, and reports

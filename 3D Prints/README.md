@@ -26,6 +26,7 @@ The basic steps are:
    * Station ALOHA pH and Temperature   
    * Lynx Cycles - Mackenzie Region 1821 to 1934
    * Fraser Sockeye Salmon Cycles
+   * Yukon River Ice Breakup Dates at Dawson
 
 All of these are available via our [online shop](https://www.shapeways.com/shops/solv).
 To provide design suggestions or request a particular time series, leave a note on the

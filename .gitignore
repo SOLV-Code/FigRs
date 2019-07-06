@@ -1,0 +1,38 @@
+# Output files
+*.pdf
+*.jpg
+*.tiff
+*.doc
+*.docx
+*.png
+*.zip
+*.xls
+*.xlsx
+*.stl
+
+/3D Prints/Time Series/stl
+
+
+# Session Data & History files
+.RData
+.Rhistory
+.Rapp.history
+.RDataTmp
+.RData
+.Ruserdata
+
+# Session Data & History files
+.RData
+.Rhistory
+.Rapp.history
+.RDataTmp
+.Rproj.user
+
+# shortcut files
+.exe.lnk  
+.lnk
+
+
+.RData
+.RDataTmp
+.Rhistory
