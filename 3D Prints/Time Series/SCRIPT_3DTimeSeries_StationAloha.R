@@ -63,7 +63,7 @@ plot(aloha.df.annualavg$year, aloha.df.annualavg$temp,type="l")
 # change to difference from lowest value (plus a base of 5%) and 
 # scale relative to base/pedestal units and grid cells/ year
 # some trial and error required for this
-aloha.pH.conv <- (aloha.df.annualavg$pHcalc_insitu * 1000 - min(950* aloha.df.annualavg$pHcalc_insitu) ) -400
+aloha.pH.conv <- ((aloha.df.annualavg$pHcalc_insitu * 1000 - min(950* aloha.df.annualavg$pHcalc_insitu) ) -400) *1.3
 aloha.temp.conv <- (aloha.df.annualavg$temp *60 - min(57* aloha.df.annualavg$temp) ) - 70
 
 plot(aloha.df.annualavg$year,aloha.pH.conv,type="l")
