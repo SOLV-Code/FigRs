@@ -28,7 +28,7 @@ or get one of the sample prints from our [online shop](https://www.shapeways.com
 Data sources are listed in each R script.
 
 * [Mauna Loa Atmospheric CO2](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_MaunaLoaCO2.R)   
-* [El Nino Events (Nino4 Series)]()   
+* [El Nino Events (Nino4 Series)](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_ElNinoIndex.R)   
 * [Station ALOHA pH and Temperature](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_StationAloha.R)   
 * [Lynx Cycles - Mackenzie Region 1821 to 1934](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_LynxAbd.R)
 * [Fraser Sockeye Salmon Cycles](https://github.com/SOLV-Code/FigRs/blob/master/3D%20Prints/Time%20Series/SCRIPT_3DTimeSeries_FraserSockeye.R)  
