@@ -58,9 +58,15 @@ To provide design suggestions or request a particular time series, leave a note 
 
 #### Blender Hotkeys Needed
 
-Shift and right click to select multiple objects (in object mode)
+- Tab = Toggle between Object Mode and Edit Mode (If selected text obj, press Tab to enter text, del doesn't work, only backspace)
 
-* Tab = Toggle between Object Mode and Edit Mode (If selected text obj, press Tab to enter text, del doesn't work, only backspace)
+In object mode:
+- Shift and right click to select multiple objects
+- Mousewheel to zoom
+   - Ctrl + Wheel to pan Left/Right
+   - Shift + Wheel to pan Up/Down
+   - Shift + c to zoom out
+
 
 In edit mode: 
 - need to set on bottom menu whether to select vertices, edges, or surfaces
@@ -69,17 +75,12 @@ In edit mode:
 - B key: to box select
 - Ctrl and LMB to Lasso select
 - C to brush select with RMB
-
-
 - x = Delete
 - G = Grab
 - S = Scale
 - R = Rotate
 
-- Mousewheel to zoom
-   - Ctrl + Wheel to pan Left/Right
-   - Shift + Wheel to pan Up/Down
-   - Shift + c to zoom out
+
 
 
 
