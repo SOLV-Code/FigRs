@@ -58,20 +58,27 @@ To provide design suggestions or request a particular time series, leave a note 
 
 #### Blender Hotkeys Needed
 
+Views:
+- Change views with combination of Number Keys, hotkeys, and Mousepad (This is tricky at first!)
+- 2,4,6,8 rotate incrementally in that direction
+- 1,3,7 switch to a preset view
+- Shift + c to zoom out
+- Mousewheel to zoom
+- Ctrl + Wheel to pan Left/Right
+- Shift + Wheel to pan Up/Down
+
+Menus / Modes:
 - Tab = Toggle between Object Mode and Edit Mode (If selected text obj, press Tab to enter text, del doesn't work, only backspace)
+- N opens the properties menu
 
 In object mode:
 - Shift and right click to select multiple objects
-- Mousewheel to zoom
-   - Ctrl + Wheel to pan Left/Right
-   - Shift + Wheel to pan Up/Down
-   - Shift + c to zoom out
-
 
 In edit mode: 
 - need to set on bottom menu whether to select vertices, edges, or surfaces
 - Right Mouse Button (RMB) to select
 - Shift and RMB to select multiple
+- A to select/deselect all
 - B key: to box select
 - Ctrl and LMB to Lasso select
 - C to brush select with RMB
