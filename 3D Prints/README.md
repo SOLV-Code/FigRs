@@ -12,7 +12,9 @@ The basic steps are:
 * Convert the plot into a shapefile (*.stl) using [r2stl{}](https://cran.r-project.org/web/packages/r2stl/index.html) by [Ian Walker](http://drianwalker.com/)
 * Check your stl file using an stl viewer (e.g. [ViewSTL](https://www.viewstl.com/)).
 * (Optional) Import the shapefile into [Blender](https://www.blender.org/) to polish up the design 
-(e.g. add text and hollow out the base to reduce the cost of the 3D print). 
+(e.g. add text and hollow out the base to reduce the cost of the 3D print).  Note that Blender is extremely powerful and 
+has a very steep learning curve, but to do a little polishing of the 3D print you only need a few basic functions. 
+Start with their [First Steps Tutorial](https://www.blender.org/support/tutorials/) and the guide/cheatsheet below.
 * Send your object to a 3D  printing service (e.g. [Shapeways](https://www.shapeways.com/)).
 
 
@@ -47,4 +49,53 @@ To provide design suggestions or request a particular time series, leave a note 
 ### Data Prints by Others
 - [US Population by State](https://www.shapeways.com/product/VA79ZCB33/usa-by-population?optionId=61661219)
 - [US Treasury Yields](https://www.shapeways.com/product/H4KTPRTET/2015-edition-u-s-treasury-yield-curve?optionId=58230053&li=marketplace)
+
+
+### Getting Started with Blender
+
+*These notes are specifically for polishing stl shapes created with r2stl() for printing via shapeways.com*
+
+
+#### Blender Hotkeys Needed
+
+Shift and right click to select multiple objects (in object mode)
+
+* Tab = Toggle between Object Mode and Edit Mode (If selected text obj, press Tab to enter text, del doesn't work, only backspace)
+
+In edit mode: 
+- need to set on bottom menu whether to select vertices, edges, or surfaces
+- Right Mouse Button (RMB) to select
+- Shift and RMB to select multiple
+- B key: to box select
+- Ctrl and LMB to Lasso select
+- C to brush select with RMB
+
+
+- x = Delete
+- G = Grab
+- S = Scale
+- R = Rotate
+
+- Mousewheel to zoom
+   - Ctrl + Wheel to pan Left/Right
+   - Shift + Wheel to pan Up/Down
+   - Shift + c to zoom out
+
+
+
+#### Basic Steps
+
+- Clean up edges of the standing base (select, then x, then delete vertices)
+- On left menu, select Normals > recalculate (this cleans up the surface for adding thickness)
+- On right menu, choose wrench tool to add a modifier, then select "solidify", and change thickness to 4.0
+- Add text as needed (create text and solidify, then line up with side of the object)
+- "a" to select all objects, 
+- Export to stl file
+- Upload stl file to shapeways
+- rescale as needed (36% in most cases)
+
+
+
+
+
 

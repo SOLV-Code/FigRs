@@ -37,6 +37,8 @@ Data sources are listed in each R script.
 ### Planned Examples
 
 * Yukon River Ice Breakup at Dawson ([Data](http://www.yukonriverbreakup.com/statistics))
+* Newfoundland Iceberg Counts
+* US Inflation Index 1913-2018
 
 
 
