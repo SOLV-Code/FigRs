@@ -72,7 +72,10 @@ Menus / Modes:
 - N opens the properties menu
 
 In object mode:
+- right click to select an object
 - Shift and right click to select multiple objects
+- click on one of the axis arrows and hold to move object with mouse along that axis
+- click on the white circle arrows and hold to freely move object with mouse 
 
 In edit mode: 
 - need to set on bottom menu whether to select vertices, edges, or surfaces
@@ -88,7 +91,8 @@ In edit mode:
 - R = Rotate
 
 
-
+Other:
+- Shift + D (uplicate) to create a copy of an object
 
 
 #### Basic Steps
@@ -96,7 +100,7 @@ In edit mode:
 - Clean up edges of the standing base (select, then x, then delete vertices)
 - On left menu, select Normals > recalculate (this cleans up the surface for adding thickness)
 - On right menu, choose wrench tool to add a modifier, then select "solidify", and change thickness to 4.0
-- Add text as needed (create text and solidify, then line up with side of the object)
+- Add text as needed (create text and solidify with F > Geometry > Depth/Extrude, then line up with side of the object)
 - "a" to select all objects, 
 - Export to stl file
 - Upload stl file to shapeways

@@ -1,6 +1,6 @@
 ## FigRs - Visualizing the Elements of Risk-Based Decisions in R & Shiny
 
-(FigRs is part of the [SOLV Online Resources](http://www.solv.ca/OnlineResources.html)) 
+(FigRs is part of the [SOLV Online Resources](http://www.solv.ca)) 
 
 The step of bringing quantitative information into a large group is tricky, 
 and small changes in layout can make a big difference. FigRs collects 
