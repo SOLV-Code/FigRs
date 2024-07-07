@@ -86,8 +86,8 @@ In edit mode:
 - Ctrl and LMB to Lasso select
 - C to brush select with RMB
 - x = Delete
-- G = Grab
-- S = Scale
+- G = Grab  G+x,y,z to move along axis
+- S = Scale  for resizing objects, then enter number (e.g. ".5") then click left mouse button to accept.
 - R = Rotate
 
 
@@ -105,6 +105,37 @@ Other:
 - Export to stl file
 - Upload stl file to shapeways
 - rescale as needed (36% in most cases)
+
+
+#### Notes from 2024 Prints
+
+BLENDER
+
+1) Change Blender units to mm *before* importing stl files
+2) Import
+3) Resize: Select and edit mode -> S -> .5 
+4) "N" to show details including dimensions
+5) clean up extra vertices (select -> delete -> vertices), 
+6) Fix Normals: select a part -> "L" then "Ctrl-L" to select all linked pieces -> Menu -> Mesh -> Normals -> Recalculate Normals
+7) Solidify:  Wrench icon -> add modified -> "Generate" -> "Solidify" -> Mode: complex, Thickness Mode: Even, Boundary: Flat, Merge Thickness: 0.01mm, Offset: -0.5, Thickness: 2mm
+8) text: "extrude" to 2 mm
+9) export ("selection only")
+
+
+Shapeways
+
+- Load
+- Resize 75% for small prints
+
+
+
+
+
+
+
+
+
+
 
 
 
