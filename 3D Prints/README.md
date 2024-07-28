@@ -66,6 +66,7 @@ Views:
 - Mousewheel to zoom
 - Ctrl + Wheel to pan Left/Right
 - Shift + Wheel to pan Up/Down
+- Ctrl + 3 to reset view to main axis !!!!
 
 Menus / Modes:
 - Tab = Toggle between Object Mode and Edit Mode (If selected text obj, press Tab to enter text, del doesn't work, only backspace)
@@ -107,7 +108,9 @@ Other:
 - rescale as needed (36% in most cases)
 
 
-#### Notes from 2024 Prints
+#### Notes from 2024 Prints - Shapeways
+
+**Shapeways seems to be not working at the moment
 
 BLENDER
 
@@ -129,10 +132,21 @@ Shapeways
 
 
 
+#### Notes from 2024 Prints - 3D Smith
 
+*Different kind of 3D printer -> need solid objects*
 
+BLENDER
 
-
+1) Change Blender units to mm *before* importing stl files
+2) Import
+3) Resize: Select and edit mode -> S -> .5 
+4) "N" to show details including dimensions
+5) clean up extra vertices (select -> delete -> vertices), 
+6) Fix Normals: select a part -> "L" then "Ctrl-L" to select all linked pieces -> Menu -> Mesh -> Normals -> Recalculate Normals
+7) Close bottom of base: tab to enter edit mode, choose "edge select" icon -> Select the rim of the base -> change to "vertices select" icon -> click "Alt-F" to fill the bottom
+8) text: "extrude" to 1 mm, and only ~0.5mm should stick out
+9) export ("selection only")
 
 
 
